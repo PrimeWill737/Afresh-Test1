@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afresh Innovations - Modern Product Catalog</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/png" href="./images/afr.png">
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header role="banner">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Afresh Software Innovations</h1>
+        <p>
+          Welcome to our world of cutting-edge technology products. Explore our
+          catalog and discover innovation at its finest.
+        </p>
+        <a href="#products" class="cta-button" aria-label="Explore Products"
+          >Explore Products</a
+        >
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main role="main">
+      <div class="container">
+        <!-- Products Table Section -->
+        <section id="products">
+          <h2>Our Product Catalog</h2>
+          <table class="product-table" aria-label="Product catalog table">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./images/laptop.jpg"</td>
+                <td>Laptop Pro</td>
+                <td>
+                  High-performance laptop with Intel i7 processor.<br />Perfect
+                  for professionals.
+                </td>
+                <td>$999</td>
+                <td>
+                  <button
+                    onclick="buyProduct('Laptop Pro')"
+                    aria-label="Buy Laptop Pro"
+                  >
+                    Buy Now
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="./images/phone.jpg"</td>
+                <td>Smartphone</td>
+                <td>
+                  Latest smartphone with 5G support.<br />Advanced camera
+                  system.
+                </td>
+                <td>$699</td>
+                <td>
+                  <button
+                    onclick="buyProduct('Smartphone')"
+                    aria-label="Buy Smartphone X"
+                  >
+                    Buy Now
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="./images/earbuds.jpg"</td>
+                <td>Wireless Earbuds</td>
+                <td>
+                  Noise-cancelling earbuds with 20-hour battery.<br />Bluetooth
+                  5.0.
+                </td>
+                <td>$149</td>
+                <td>
+                  <button
+                    onclick="buyProduct('Wireless Earbuds')"
+                    aria-label="Buy Wireless Earbuds"
+                  >
+                    Buy Now
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+          <h2>Product Gallery</h2>
+          <div class="gallery">
+            <img src="./images/Linuse.jpg" alt="Laptop in use" />
+            <img src="./images/Pinuse.jpg" alt="Smartphone display" />
+            <img src="./images/Einuse.jpg" alt="Earbuds in use" />
+          </div>
+        </section>
+
+        <!-- Links Section -->
+        <section class="links">
+          <h2>Quick Links</h2>
+          <a href="https://example.com/about" aria-label="About Us">About Us</a>
+          <a href="https://example.com/support" aria-label="Support">Support</a>
+          <a href="https://example.com/privacy" aria-label="Privacy Policy"
+            >Privacy Policy</a
+          >
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <form id="contactForm" aria-label="Contact form">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+            />
+
+            <label for="product">Interested Product:</label>
+            <select id="product" name="product" required aria-required="true">
+              <option value="">Select a product</option>
+              <option value="Laptop Pro">Laptop Pro</option>
+              <option value="Smartphone X">Smartphone X</option>
+              <option value="Wireless Earbuds">Wireless Earbuds</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+            ></textarea>
+
+            <button type="submit" id="submitBtn">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <p>
+          &copy; 2023 Tech Innovations. All rights reserved. |
+          <a href="./cpr.html" target="_blank" aria-label="Terms of Service"
+            >Terms of Service</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="major.js"></script>
+  </body>
+</html>
