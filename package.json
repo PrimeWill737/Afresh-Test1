@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "ty",
+  "keywords": [
+    "william"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrimeWill737"
+  },
+  "license": "ISC",
+  "author": "william",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
